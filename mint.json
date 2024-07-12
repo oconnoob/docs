@@ -1,18 +1,18 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "AssemblyAI",
   "logo": {
     "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "light": "/logo/old-logo.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/old-logo.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#2543cc",
+    "light": "#556ce7",
+    "dark": "#15226c",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#15226c",
+      "to": "#556ce7"
     }
   },
   "topbarLinks": [
@@ -23,69 +23,135 @@
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://www.assemblyai.com/dashboard/signup"
   },
   "tabs": [
     {
+      "name": "Quickstart",
+      "url": "tabs/quickstart"
+    },
+    {
+      "name": "Models",
+      "url": "tabs/models"
+    },
+    {
+      "name": "Examples",
+      "url": "tabs/examples"
+    },
+    {
       "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "tabs/api-reference"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Integrations",
+      "url": "tabs/integrations"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Troubleshooting",
+      "url": "tabs/troubleshooting"
     }
   ],
+  "primaryTab": {
+    "name": "Home"
+  },
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "home"
+      ]
+    },
+
+
+
+    {
+      "group": "",
+      "pages": [
+        "tabs/quickstart/quickstart"
+      ]
+    },
+
+
+    {
+      "group": "",
+      "pages": [
+        "tabs/models/models"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Speech-to-Text",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "tabs/models/speech-to-text/speaker-diarization",
+        "tabs/models/speech-to-text/speech-recognition",
+        "tabs/models/speech-to-text/streaming"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "LeMUR - LLMs for speech",
       "pages": [
-        "api-reference/introduction"
+        "tabs/models/lemur-llms-for-speech/ask-questions-about-your-audio-data",
+        "tabs/models/lemur-llms-for-speech/summarize-your-audio-data",
+        "tabs/models/lemur-llms-for-speech/extract-and-generate-data",
+        "tabs/models/lemur-llms-for-speech/generate-content-based-on-your-audio-data",
+        "tabs/models/lemur-llms-for-speech/customize-parameters",
+        "tabs/models/lemur-llms-for-speech/lemur-examples",
+        "tabs/models/lemur-llms-for-speech/advanced"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Audio Intelligence",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "tabs/models/audio-intelligence/summarization",
+        "tabs/models/audio-intelligence/content-moderation",
+        "tabs/models/audio-intelligence/sentiment-analysis",
+        "tabs/models/audio-intelligence/entity-detection",
+        "tabs/models/audio-intelligence/topic-detection",
+        "tabs/models/audio-intelligence/auto-chapters",
+        "tabs/models/audio-intelligence/key-phrases",
+        "tabs/models/audio-intelligence/pii-redaction"
+      ]
+    },
+
+
+
+    {
+      "group": "",
+      "pages": [
+        "tabs/examples/examples"
+      ]
+    },
+
+
+
+    {
+      "group": "",
+      "pages": [
+        "tabs/api-reference/api-reference"
+      ]
+    },
+
+
+
+    {
+      "group": "",
+      "pages": [
+        "tabs/integrations/integrations"
+      ]
+    },
+
+
+
+    {
+      "group": "",
+      "pages": [
+        "tabs/troubleshooting/troubleshooting"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "discord": "https://discord.com/invite/CEqt6x2YPK",
+    "x": "https://x.com/assemblyai",
+    "linkedin": "https://www.linkedin.com/company/assemblyai",
+    "github": "https://github.com/AssemblyAI-Community"
   }
 }
